@@ -23,7 +23,8 @@
   "homepage": "https://github.com/saikumar-madana/hostelme-fe#readme",
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.18.0"
   },
   "devDependencies": {
     "@babel/core": "^7.23.2",
