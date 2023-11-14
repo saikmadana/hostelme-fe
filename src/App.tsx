@@ -9,11 +9,12 @@ import Rooms from './components/Room/Rooms';
 const App = (): JSX.Element => {
   return (
     <div>
-      <Header />
       <Router>
+        <Header />
         <Routes>
           <Route path="/" element={<Dashboard />} />
           <Route path="/rooms" element={<Rooms />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Router>
     </div>
@@ -21,3 +22,12 @@ const App = (): JSX.Element => {
 };
 
 export default App;
+
+const NotFoundPage = (): JSX.Element => {
+  return (
+    <>
+      <h1>404 - Page Not Found</h1>
+      <p>Sorry, the page you are looking for could not be found.</p>
+    </>
+  );
+};
