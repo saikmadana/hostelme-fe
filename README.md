@@ -73,3 +73,10 @@
 ### Deployment:
 
 - Use the CI/CD pipeline to automate the deployment process to staging and production environments.
+
+
+
+
+### Feature Suggestions
+- Compliant Box which uses WYSWYG editor
+- Have dark theme

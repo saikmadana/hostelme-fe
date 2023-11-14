@@ -29,8 +29,16 @@ module.exports = {
         }
       },
       {
-        test: /\.(css)$/,
-        use: ['style-loader', 'css-loader']
+        test: /\.s?(css)$/,
+        use: ['style-loader', {
+          loader: 'css-loader',
+          options: {
+            sourceMap: true,
+            modules: {
+              localIdentName: '[name]__[local]___[hash:base64:5]',
+            },
+          },
+      }, 'sass-loader']
       },
       {
         test: /\.(png|svg|gif)(\?[a-z0-9=.]+)?$/,
@@ -38,6 +46,8 @@ module.exports = {
       },
     ]
   },
+
+  devtool: "eval-source-map",
 
   plugins: [
     new htmlWebpackPlugin({ template: './src/index.html' })

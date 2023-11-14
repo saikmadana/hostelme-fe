@@ -1,0 +1,29 @@
+// Fontsize
+$default-font-size: 14px;
+
+
+$box-shadow-light: 0 0 4px 0 rgb(0 0 0 / 8%);
+$box-shadow-medium: 0 1px 3px rgb(0 0 0 / 10%);
+$box-shadow-regular: 0 2px 4px rgb(0 0 0 / 10%);
+
+// Typography
+$line-height-base: 1.5 !default;
+
+
+// Breakpoints
+$screen-sm-min: 660px !default;
+$screen-md-min: 720px !default;
+$screen-lg-min: 1024px !default;
+$screen-desktop: 1224px !default;
+$screen-desktop-hd: 1366px !default;
+$screen-wide-desktop: 1600px !default;
+$screen-extension-sidebar: 320px !default;
+$screen-xxs-max: 480px !default;
+$screen-xs-max: ($screen-sm-min - 1) !default;
+$screen-sm-max: ($screen-md-min - 1) !default;
+$screen-md-max: ($screen-lg-min - 1) !default;
+$screen-lg-max: ($screen-desktop - 1) !default;
+$screen-desktop-max: ($screen-desktop-hd - 1) !default;
+
+
+$header-height: 32px;

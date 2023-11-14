@@ -1,11 +1,11 @@
 import React from 'react';
 
-import './Header.css';
+import styles from './Header.module.scss';
 import logo from '../../assets/images/logo.png';
 
 const Header = (): JSX.Element => {
   return (
-    <section className="header-wrapper">
+    <section className={styles.headerWrapper}>
       <div className="header-content">
         <div className="logo">
           <img src={logo} alt="logo" />
