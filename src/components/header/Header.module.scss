@@ -1,0 +1,23 @@
+.headerWrapper {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+
+.headerContent {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navItems {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
