@@ -1,5 +1,6 @@
 const path = require('path');
 const htmlWebpackPlugin = require('html-webpack-plugin');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = {
   entry: './src/index.tsx',
@@ -50,7 +51,8 @@ module.exports = {
   devtool: "eval-source-map",
 
   plugins: [
-    new htmlWebpackPlugin({ template: './src/index.html' })
+    new htmlWebpackPlugin({ template: './src/index.html' }),
+    // new BundleAnalyzerPlugin()
   ],
 
   resolve: {
