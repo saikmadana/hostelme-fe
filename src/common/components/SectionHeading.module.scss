@@ -1,0 +1,20 @@
+.sectionHeadingWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.heading {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--secondary-text);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.viewAll {
+  .link:hover {
+    color: var(--primaryHover);
+    text-decoration: none;
+  }
+}

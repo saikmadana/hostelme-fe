@@ -42,7 +42,7 @@ module.exports = {
   devtool: "eval-source-map",
 
   plugins: [
-    new htmlWebpackPlugin({ template: './src/index.html' }),
+    new htmlWebpackPlugin({ template: './src/index.html', favicon: './favicon.ico', }),
   ],
 
   resolve: {

@@ -1,0 +1,33 @@
+.roomCardWrapper {
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  padding: 10px;
+  &:hover {
+    box-shadow: var(--container-shadow);
+  }
+}
+
+.roomCardData {
+  font-weight: bold;
+  color: var(--primary-text);
+  &:not(:last-child) {
+    margin-bottom: 5px;
+  }
+}
+
+.value {
+  font-style: italic;
+  color: var(--primary-text);
+}
+
+.roomCardImg {
+  width: 400px;
+  height: 300px;
+  object-fit: contain;
+  overflow: hidden;
+  text-align: center;
+  border-bottom: 1px solid var(--border);
+  img {
+    max-width: 100%;
+  }
+}

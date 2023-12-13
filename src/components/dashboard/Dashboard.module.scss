@@ -1,3 +1,22 @@
-.test {
-  background-color: red;
+.dashboardWrapper {
+  max-width: var(--site-width);
+  padding: var(--layout-padding);
+  margin: 0 auto;
+}
+
+.roomsWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 10px;
+  align-items: center;
+}
+
+.tenantsWrapper {
+  display: grid;
+  gap: 10px;
+}
+
+.tenantsSection, .roomsSection {
+  margin-top: 20px;
 }

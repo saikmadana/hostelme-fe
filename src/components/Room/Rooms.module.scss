@@ -1,0 +1,13 @@
+.roomContent {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.roomsWrapper {
+  max-width: var(--site-width);
+  margin: 0 auto;
+  padding: var(--layout-padding);
+}

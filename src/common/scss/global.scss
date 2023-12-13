@@ -1,5 +1,9 @@
-@import './variables';
+@use './reset';
+@use './variables';
+@use './defaults';
 
 body {
-  font-size: $default-font-size;
+  font-size: variables.$default-font-size;
+  background-color: var(--body-bg);
+  font-family: Arial, sans-serif;
 }
