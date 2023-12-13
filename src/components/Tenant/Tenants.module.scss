@@ -1,0 +1,10 @@
+.tenantsContent {
+  display: grid;
+  gap: 10px;
+}
+
+.tenantsWrapper {
+  max-width: var(--site-width);
+  margin: 0 auto;
+  padding: var(--layout-padding);
+}
