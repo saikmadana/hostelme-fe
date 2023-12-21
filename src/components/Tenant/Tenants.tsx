@@ -1,34 +1,42 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
+// Redux
+import { useAppDispatch, useAppSelector } from '../../slices/hooks';
+import { fetchTenants } from '../../slices/tenantSlice';
+
+// Components
 import TenantCard from './TenantCard';
-import styles from './Tenants.module.scss';
 import SectionHeading from '../../common/components/SectionHeading';
 
+// Assets
+import styles from './Tenants.module.scss';
+
 const Tenants = (): JSX.Element => {
+  const dispatch = useAppDispatch();
+  const tenants = useAppSelector((state) => state.tenants.tenants);
+  const loading = useAppSelector((state) => state.tenants.loading);
+
+  useEffect(() => {
+    void dispatch(fetchTenants());
+  }, []);
+
   return (
     <div className={styles.tenantsWrapper}>
       <SectionHeading headingText="Tenants" />
-      <div className={styles.tenantsContent}>
-        {Array(60)
-          .fill(1)
-          .map((_v, index) => {
-            return (
-              <TenantCard
-                key={index}
-                tenant={{
-                  name: 'Sai Kumar',
-                  designation: 'Sr. Developer',
-                  city: 'Rajahmundry',
-                  mobile: 123,
-                  email: 'sai@tw.com',
-                  room: 12312,
-                  joinedDate: '22-Aug-2023',
-                  picture: 'https://picsum.photos/50/50'
-                }}
-              />
-            );
-          })}
-      </div>
+      {!loading
+        ? <div className={styles.tenantsContent}>
+          {tenants
+            .map((tenant) => {
+              return (
+                <TenantCard
+                  key={tenant.id}
+                  tenant={tenant}
+                />
+              );
+            })}
+        </div>
+        : <>Loading...</>
+      }
     </div>
   );
 };
