@@ -7,6 +7,7 @@ import { fetchTenants } from '../../slices/tenantSlice';
 // Components
 import TenantCard from './TenantCard';
 import SectionHeading from '../../common/components/SectionHeading';
+import Shimmer from '../../common/components/Shimmer';
 
 // Assets
 import styles from './Tenants.module.scss';
@@ -35,7 +36,11 @@ const Tenants = (): JSX.Element => {
               );
             })}
         </div>
-        : <>Loading...</>
+        : <div className={styles.tenantsContent}>
+            <Shimmer height={100} width={'100%'} />
+            <Shimmer height={100} width={'100%'} />
+            <Shimmer height={100} width={'100%'} />
+        </div>
       }
     </div>
   );

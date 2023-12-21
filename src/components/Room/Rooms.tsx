@@ -7,6 +7,7 @@ import { fetchRooms } from '../../slices/roomSlice';
 // Components
 import RoomCard from './RoomCard';
 import SectionHeading from '../../common/components/SectionHeading';
+import Shimmer from '../../common/components/Shimmer';
 
 // Assets
 import styles from './Rooms.module.scss';
@@ -36,7 +37,11 @@ const Rooms = (): JSX.Element => {
           })}
         </div>
       ) : (
-        <>Loading...</>
+        <div className={styles.roomContent}>
+          <Shimmer height={450} width={400}/>
+          <Shimmer height={450} width={400}/>
+          <Shimmer height={450} width={400}/>
+        </div>
       )}
     </div>
   );
