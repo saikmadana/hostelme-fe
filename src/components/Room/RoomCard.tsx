@@ -1,22 +1,20 @@
 import React from 'react';
+
+// Redux
+import { Room } from '../../slices/roomSlice';
+
+// Assets
 import style from './RoomCard.module.scss';
 
 interface RoomCardProps {
-  room: {
-    id: number
-    pic: string
-    rent: number
-    type: string
-    sharing: number
-    desc: string
-  }
+  room: Room
 }
 
 const RoomCard = ({ room }: RoomCardProps): JSX.Element => {
-  const { pic, id, rent, type, sharing, desc } = room;
+  const { picture, id, rent, type, sharing, desc } = room;
   return (
     <div className={style.roomCardWrapper}>
-      <img className={style.roomCardImg} src={pic} alt="room" />
+      <img className={style.roomCardImg} src={picture} alt="room" />
       <div className={style.roomCardContent}>
         <div className={style.roomCardData}>
           <span>Room Number: </span>

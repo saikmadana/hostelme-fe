@@ -1,14 +1,20 @@
 import React from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import store from './store';
 
-import './App.scss';
-import Header from './components/header/Header';
+// Components
 import Dashboard from './components/dashboard/Dashboard';
 import Rooms from './components/Room/Rooms';
 import Tenants from './components/Tenant/Tenants';
+import Header from './components/header/Header';
+
+// Assets
+import './App.scss';
 
 const App = (): JSX.Element => {
   return (
+    <Provider store={store}>
     <div>
       <Router>
         <Header />
@@ -20,6 +26,7 @@ const App = (): JSX.Element => {
         </Routes>
       </Router>
     </div>
+    </Provider>
   );
 };
 
