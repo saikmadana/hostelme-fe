@@ -34,7 +34,7 @@ module.exports = {
       },
       {
         test: /\.(png|svg|gif)(\?[a-z0-9=.]+)?$/,
-        type: 'asset',
+        type: 'asset/resource',
       },
     ]
   },
