@@ -1,0 +1,28 @@
+{
+  "rooms": [
+    {
+      "id": 1,
+      "picture": "https://picsum.photos/400/300",
+      "rent": 8000,
+      "type": "AC",
+      "sharing": 3,
+      "desc": "Fully furnished"
+    },
+    {
+      "id": 2,
+      "picture": "https://picsum.photos/400/300",
+      "rent": 8000,
+      "type": "Non AC",
+      "sharing": 4,
+      "desc": "Fully furnished"
+    },
+    {
+      "id": 3,
+      "picture": "https://picsum.photos/400/300",
+      "rent": 8000,
+      "type": "AC",
+      "sharing": 5,
+      "desc": "Fully furnished"
+    }
+  ]
+}

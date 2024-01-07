@@ -23,7 +23,7 @@ const Rooms = (): JSX.Element => {
   }, []);
 
   return (
-    <div className={styles.roomsWrapper}>
+    <div data-testid="rooms" className={styles.roomsWrapper}>
       <SectionHeading headingText="Rooms" />
       {!loading ? (
         <div className={styles.roomContent}>

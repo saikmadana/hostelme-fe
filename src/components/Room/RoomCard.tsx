@@ -13,7 +13,7 @@ interface RoomCardProps {
 const RoomCard = ({ room }: RoomCardProps): JSX.Element => {
   const { picture, id, rent, type, sharing, desc } = room;
   return (
-    <div className={style.roomCardWrapper}>
+    <div className={style.roomCardWrapper} data-testid="room-card">
       <img className={style.roomCardImg} src={picture} alt="room" />
       <div className={style.roomCardContent}>
         <div className={style.roomCardData}>
