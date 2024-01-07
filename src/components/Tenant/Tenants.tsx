@@ -22,7 +22,7 @@ const Tenants = (): JSX.Element => {
   }, []);
 
   return (
-    <div className={styles.tenantsWrapper}>
+    <div data-testid="tenants" className={styles.tenantsWrapper}>
       <SectionHeading headingText="Tenants" />
       {!loading
         ? <div className={styles.tenantsContent}>

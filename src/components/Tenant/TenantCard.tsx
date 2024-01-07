@@ -15,7 +15,7 @@ interface TenantProps {
 
 const TenantCard = ({ tenant }: TenantProps): JSX.Element => {
   return (
-    <div className={styles.TenantsWrapper}>
+    <div data-testid="tenant-card" className={styles.TenantsWrapper}>
       <div className={styles.picture}>
         <img src={tenant.picture} alt="user_picture"></img>
       </div>

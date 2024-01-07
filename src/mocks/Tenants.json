@@ -1,0 +1,37 @@
+{
+  "tenants": [
+    {
+      "id": 1,
+      "name": "Sai Kumar",
+      "designation": "Software Engineer",
+      "city": "Hyderabad",
+      "phone": 8087300234,
+      "email": "test@gmail.com",
+      "room": 2,
+      "joinedDate": "22-Aug-2023",
+      "picture": "https://picsum.photos/50/50"
+    },
+    {
+      "id": 2,
+      "name": "Rajitha",
+      "designation": "Software Engineer",
+      "city": "Hyderabad",
+      "phone": 8039903603,
+      "email": "test@gmail.com",
+      "room": 4,
+      "joinedDate": "22-Aug-2023",
+      "picture": "https://picsum.photos/50/50"
+    },
+    {
+      "id": 3,
+      "name": "Sagar R",
+      "designation": "Software Engineer",
+      "city": "Hyderabad",
+      "phone": 7317738138,
+      "email": "test@gmail.com",
+      "room": 3,
+      "joinedDate": "22-Aug-2023",
+      "picture": "https://picsum.photos/50/50"
+    }
+  ]
+}

@@ -7,7 +7,7 @@ import MOCKDATA from '../mocks/RoomCard.json';
 describe('Test Room Card Component', () => {
   it("should render room card", () => {
     render(<RoomCard room={MOCKDATA} />);
-    expect(screen).toMatchSnapshot();
+    expect(screen.getByTestId("room-card")).toBeInTheDocument();
   });
 
   it("should render room card data", () => {

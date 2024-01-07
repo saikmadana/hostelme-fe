@@ -1,0 +1,13 @@
+{
+  "tenant": {
+    "id": 1,
+    "name": "name",
+    "designation": "desig",
+    "city": "city",
+    "phone": 123123123,
+    "email": "email@email",
+    "room": 203,
+    "joindate": "23 Jan",
+    "picture": "dvdfvdfvdfvdfv"
+  }
+}
